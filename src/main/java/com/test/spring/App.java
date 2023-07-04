@@ -14,8 +14,9 @@ public class App {
 	//ApplicationContext appContext = new AnnotationConfigApplicationContext(AppConfig.class, AppConfig2.class);
 	//World w = (World) appContext.getBean("mars");
 	Human h = (Human) appContext.getBean("human");
-	//System.out.println(w.getWave());
-	System.out.println(h.getId() + " " + h.getName() + " " + h.getNickname() + " " + h.getCountry().getName());
+	// System.out.println(w.getWave());
+	System.out.println(h.getId() + " " + h.getName() + " " + h.getNickname() + " " + h.getCountry().getName() +
+						" " + h.getCountry().getCity());
 	 
 	}
 }

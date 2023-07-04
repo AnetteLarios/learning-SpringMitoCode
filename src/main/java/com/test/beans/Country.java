@@ -2,6 +2,7 @@ package com.test.beans;
 
 public class Country {
 	private String name; 
+	private City city; 
 	
 	
 	public String getName() {
@@ -10,5 +11,13 @@ public class Country {
 	
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public City getCity() {
+		return city;
+	}
+	
+	public void setCity(City city) {
+		this.city = city;
 	}
 }
