@@ -6,6 +6,7 @@ public class Human {
 	private String name;
 	private String nickname;
 	private Country country;
+
 	
 	/*public Human(int id, String name, String nickname) {
 		this.id = id;
