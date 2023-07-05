@@ -1,8 +1,8 @@
 package com.test.beans;
-
+import java.util.List;
 public class Country {
 	private String name; 
-	private City city; 
+	private List<City> cities; 
 	
 	
 	public String getName() {
@@ -12,12 +12,15 @@ public class Country {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
-	public City getCity() {
-		return city;
+
+	public List<City> getCities() {
+		return cities;
 	}
-	
-	public void setCity(City city) {
-		this.city = city;
+
+	public void setCities(List<City> cities) {
+		this.cities = cities;
 	}
+
+	
+
 }
