@@ -6,6 +6,7 @@ public class Human {
 	private String name;
 	private String nickname;
 	private Country country;
+	private City city;
 
 	
 	/*public Human(int id, String name, String nickname) {
@@ -53,5 +54,13 @@ public class Human {
 	
 	public void setCountry(Country country) {
 		this.country = country;
+	}
+	
+	public City getCity() {
+		return city;
+	}
+	
+	public void setCity(City city) {
+		this.city = city;
 	}
 }
