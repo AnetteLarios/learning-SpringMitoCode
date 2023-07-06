@@ -8,8 +8,7 @@
 	   <property name="wave" value= "Hello world"></property>
 	    </bean>
 	-->
-   <bean id = "human" class = "com.test.beans.Human">
-	<property name = "country" ref = "country"/>
+   <bean id = "human" class = "com.test.beans.Human" autowire = "byName" scope = "prototype">
 	<property name = "id" value = "1"/>
 	<property name = "name" value = "James"/>
 	<property name = "nickname" value = "James97"/>
@@ -17,15 +16,19 @@
    
    <bean id = "country" class = "com.test.beans.Country">
 	   <property name = "name" value = "Canada"/>
-	   <property name = "cities">
+	  <!-- <property name = "cities">
 		   <list>
 			   <ref bean = "city1"/>
 			   <ref bean = "city2"/>
 			   <ref bean = "city3"/>
 		   </list>
-	   </property>
+	   </property>-->
    </bean>
    
+   <bean id = "city" class = "com.test.beans.City">
+	   <property name ="name" value = "Quebec"/>
+   </bean>
+   <!--
    <bean id = "city1" class = "com.test.beans.City">
 	   <property name = "name" value = "Vancouver"/>
    </bean>
@@ -35,7 +38,7 @@
    <bean id = "city3" class = "com.test.beans.City">
 	   <property name = "name" value = "Calgary"/>
    </bean>
-   <!--<alias name = "human" alias = "humanBean"/>-->
+   <alias name = "human" alias = "humanBean"/>-->
   
    
 </beans>
